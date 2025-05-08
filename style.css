@@ -1,137 +1,23 @@
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #fff;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 20px;
-  line-height: 1.8;
-  color: black;
-}
-
+/* Center navigation links */
 .navbar {
-  background-color: white;
-  padding: 20px;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-  position: sticky;
-  top: 0;
-  z-index: 10;
-}
-
-.navbar a {
-  color: red;
-  text-decoration: none;
-  margin: 0 30px;
-  font-size: 1.2em;
-  font-weight: bold;
-}
-
-.navbar a:hover {
-  text-decoration: underline;
-}
-
-.header {
+  justify-content: center;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  padding: 80px 50px;
-  gap: 60px;
 }
 
-.header-text {
-  color: red;
-  font-size: 5em;
-  font-weight: bold;
-  line-height: 1.1;
-  max-width: 500px;
-  flex: 1;
-  text-align: left;
+/* Enhance section spacing */
+.content, .header, .footer-links {
+  animation: fadeIn 0.6s ease-in;
 }
 
-.header img {
-  max-width: 500px;
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
-  flex: 1;
+/* Add subtle fade-in animation */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 
-.content {
-  max-width: 750px;
-  margin: auto;
-  padding: 40px 20px;
-  font-size: 1.2em;
-  line-height: 2;
-}
-
-.content p {
-  max-width: 60ch;
-  margin-bottom: 24px;
-}
-
-h1 {
-  color: red;
-  text-align: center;
-  margin-bottom: 30px;
-  font-size: 2.5em;
-}
-
+/* Responsive horizontal rule spacing */
 hr {
-  border: 1px solid #ddd;
-  width: 90%;
-  margin: 40px auto;
-}
-
-.footer-links {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 15px;
-  margin: 40px 0;
-}
-
-.footer-links a {
-  color: red;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.2em;
-}
-
-.footer-links a:hover {
-  text-decoration: underline;
-}
-
-.resume-embed {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-}
-
-.resume-embed iframe {
-  width: 95%;
-  height: 1200px;
-  border: none;
-}
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    padding: 40px 20px;
-  }
-
-  .header-text {
-    font-size: 3em;
-    text-align: center;
-    max-width: 100%;
-  }
-
-  .navbar a {
-    display: inline-block;
-    margin: 10px;
-  }
-
-  .resume-embed iframe {
-    height: 1000px;
-  }
+  margin: 30px auto;
+  border-color: #ccc;
 }
